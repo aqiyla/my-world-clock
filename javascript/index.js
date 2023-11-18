@@ -10,6 +10,29 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  let portOfSpainElement = document.querySelector("#port-of-spain");
+  if (portOfSpainElement) {
+    let portOfSpainDateElement = portOfSpainElement.querySelector(".date");
+    let portOfSpainTimeElement = portOfSpainElement.querySelector(".time");
+    let portOfSpainTime = moment().tz("America/Port_of_Spain");
+
+    portOfSpainDateElement.innerHTML = portOfSpainTime.format("MMMM Do YYYY");
+    portOfSpainTimeElement.innerHTML = portOfSpainTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  let lagosElement = document.querySelector("#lagos");
+  if (lagosElement) {
+    let lagosDateElement = lagosElement.querySelector(".date");
+    let lagosTimeElement = lagosElement.querySelector(".time");
+    let lagosTime = moment().tz("Africa/Lagos");
+
+    lagosDateElement.innerHTML = lagosTime.format("MMMM Do YYYY");
+    lagosTimeElement.innerHTML = lagosTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
   let tokyoElement = document.querySelector("#tokyo");
   if (tokyoElement) {
