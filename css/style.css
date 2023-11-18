@@ -1,5 +1,7 @@
 body {
-  background-color: #f0fbff;
+  background-image: url("photos/oldclocks.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: sans-serif;
 }
 
@@ -61,5 +63,5 @@ select {
 footer {
   text-align: center;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
